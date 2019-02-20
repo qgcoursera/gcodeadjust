@@ -54,13 +54,11 @@ G1 X0 Y0 Z0 E0";
             // display info, or start worker
             if (showInfo)
             {
-                Console.WriteLine(
+                Console.Error.WriteLine(
                     "GCodeAdjust [diffx] [diffy] [diffz]");
             }
             else
             {
-                Console.WriteLine("input: " + input);
-
                 Console.Out.WriteLine(
                     new Worker(input)
                         .Adjust(
