@@ -28,6 +28,9 @@ namespace GCodeAdjust
                 input = Console.In.ReadToEnd();
 #else
                 input = @"
+;G1 X0a
+; G1 X0b
+G1 E0
 G1 X0
 G1 Y0
 G1 Z0

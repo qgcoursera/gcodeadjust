@@ -15,7 +15,7 @@ namespace GCodeAdjust
         {
             Text = _Text;
             RexG1 = new Regex(
-                @"(G1)(\s+X\S+)*(\s+Y\S+)*(\s+Z\S+)*",
+                @"(^\s*G1)(\s+X\S+)*(\s+Y\S+)*(\s+Z\S+)*",
                 RegexOptions.Multiline);
             Adjusters = new[] { Adjuster.Null, Adjuster.Null, Adjuster.Null };
         }
